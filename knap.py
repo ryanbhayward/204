@@ -24,7 +24,7 @@ def sack(n,W,K):  # get 0/1 solution vector
   return inSolution
 
 def solveknapsack(val,wt,W): 
-  n = len(val) -1
+  n = len(val) -1 # ignore dummy value
   K = [[0 for j in xrange(n+1)] for w in xrange(W+1)]
   for j in range(1,n+1):
     for w in range(W+1):
